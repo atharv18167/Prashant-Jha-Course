@@ -1,0 +1,36 @@
+# for i in range (1,4):
+#     for j in range (1,4) :
+#         print (i,end = " ")
+#     print ()
+
+
+# n = int(input("enter the number of rows :"))
+# for i in range (1,n+1) :
+#     for j in range (1,1+i) :
+#         print (j,end = " ")
+#     print ()
+
+
+# n = int(input("enter the number of rows :"))
+# for i in range (1,n+1) :
+#     for j in range (1,1+i) :
+#         print (chr(64+i),end = " ")
+#     print ()
+
+# import time
+# n = int(input("enter the number of rows :"))
+# for i in range (1,n+1):
+#     for j in range (1, n+2-i) :
+#         time.sleep(0.5)
+#         print ("*", end = "")
+#     print()
+
+
+
+import time
+n = int(input("enter the number of rows :"))
+for i in range (1,n+1):
+    print (" "*(n-i), end = "")
+    for j in range (1,i+1):
+        time.sleep(0.5)
+        print ("*", end = "")

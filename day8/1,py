@@ -1,0 +1,14 @@
+#remove first 2 zeroth element
+
+a = [0,0,1,2,0,3,0,0,4]
+b = []
+started = False
+
+for num in a:
+    if num !=0:
+        started = True
+
+    if started:
+        b.append(num)
+print(a)
+print(b)

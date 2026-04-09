@@ -1,0 +1,75 @@
+o(1) - constant time - accesing a specific elemnt of array
+o(N) - Linear - Loop through array element 
+O(LogN) - Logarithmic - Find an element in sorted array 
+O(n^2) - quadratic - looking ar a every index in the array twice
+O(2^n) - Exponential - Double recursion in Fibonacci
+
+
+O(N) - Linear
+array=[1,2,3,4,5]
+for element in array 
+     print(element)
+// linear time since it is visiting every element of array 
+array[0] // it takes constant time to access first element 
+
+O(logN) - Logarithmic
+array = [1,2,3,4,5]
+for index in range (0,len(array),3)
+     print(array[index])
+// logarithmic time since it is visiting only some element 
+
+O(n^2) - quadratic
+array = [1,2,3,4,5]
+for x in array :
+   for y in array :
+    print(x,y)
+
+
+O(2^n) - Exponential
+def Fibonacci(n):
+    if n<=1 :
+       return n 
+    return Fibonacci (n-1) + Fibonacci (n-2)
+
+
+
+------------------------------------------------------------------------------------------------------
+                        Time Complexity             Space Complexity
+Create Stack          -     O(1)              -         O(1)
+Push                  -     O(1)/O(n^2)       -         O(1)
+Pop                   -     O(1)              -         O(1)
+Peek                  -     O(1)              -         O(1)  
+isEmpty               -     O(1)              -         O(1)  
+Delete Entire stack   -     O(1)              -         O(1)  
+----------------------------------------------------------------------------------------------------------
+
+
+There are two ways to implement stack : 1.Array  2.Linked List 
+
+stack using list :
+     - Easy to Implement 
+     - Speed Problem when it grows
+
+stack using Linked List :
+     - Fast Performance 
+     - Implementation is not easy 
+
+
+
+------------------------------------------------------------------------------------------------------
+                        Time Complexity             Space Complexity
+Create Queue          -     O(1)              -         O(1)
+Enqueue               -     O(1)              -         O(1)
+Dequeue               -     O(1)              -         O(1)
+Peek                  -     O(1)              -         O(1)  
+isEmpty               -     O(1)              -         O(1)  
+Delete Entire stack   -     O(1)              -         O(1)  
+----------------------------------------------------------------------------------------------------------
+
+Queue using list :
+     - Easy to Implement 
+     - Speed Problem when it grows
+
+Queue using Linked List :
+     - Fast Performance 
+     - Implementation is not easy
